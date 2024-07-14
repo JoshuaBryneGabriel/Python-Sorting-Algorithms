@@ -21,7 +21,6 @@ class Stack:
     def size(self):
         return len(self.items)
 
-
 class Queue:
     def __init__(self):
         self.items = []
@@ -40,7 +39,6 @@ class Queue:
     def size(self):
         return len(self.items)
 
-
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
@@ -52,7 +50,6 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1
-
 
 if __name__ == "__main__":
     print("Choose a data structure or algorithm to use:")
@@ -121,7 +118,6 @@ if __name__ == "__main__":
                 break
             else:
                 print("Invalid operation. Please try again.")
-
     elif choice == '3':
         arr = input("Enter a sorted list of numbers separated by spaces: ").split()
         arr = list(map(int, arr))
@@ -131,6 +127,5 @@ if __name__ == "__main__":
             print(f"Number {target} found at index {index}.")
         else:
             print(f"Number {target} not found in the list.")
-
     else:
         print("Invalid choice. Please restart the program and choose a valid option.")
